@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="formulario">
+        <div class="linha"><input type="text" id="insnome" placeholder="Nome:"></div>
+        <div class="linha"><input type="text" id="insendereco" placeholder="Endereço:"></div>
+        <div class="linha"><input type="text" id="inscep" placeholder="CEP: xx.xxx-xxx" oninput=mascara_cep() maxlength="10"></div>
+        <div class="linha"><input type="text" id="inscpf" placeholder="CPF: xxx.xxx.xxx-xx" oninput=mascara_cpf() maxlength="14"></div>
+        <div class="linha"><input type="tel" id="instelefone" placeholder="Telefone: (xx) x xxxx-xxxx" oninput=mascara_telefone() maxlength="14"></div>
+        <div class="linha"><input type="text" id="inscnpj" placeholder="CNPJ: XX.XXX.XXX/0001-XX" oninput=mascara_cnpj() maxlength="18"></div>
+        <div class="linha"><input type="text" id="inscod" placeholder="Código: xx_xx//xxx-xxx.9.xxx" oninput=mascara_cod() maxlength="20"></div>
+        <div class="linhavazia"></div>
+        <div class="linha"><input type="submit" class="botao" value="Enviar" id="submit"></div>
+        <div class="linha"><input type="reset" class="botao" value="Resetar" id="reset  "></div>
+    </div>
+    <div class="modal" id="modal"> 
+    <dialog open>
+        <p>Seus dados foram enviados com sucesso</p>
+    </dialog>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid;
+    width: 155vh;
+    height: 52vh;
+    column-gap: 10px;
+    row-gap: 20px;
+    background-color: rgb(70, 35, 104); 
+    align-items: center;
+}
+
+.linha {
+    border: none;
+}
+
+input {
+    width: 73.5vh;
+    font-size: 30px;
+    height: 7.7vh;
+}
+
+.botao {
+    background-color: rgb(70, 35, 104);
+    border-radius: 150px;
+    color: white;
+    border-color: white;
+}
+
+#modal.nao {
+    display: none;
+}
